@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:XonSNNDashboard/XonSNNDashboard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XonSNNCore/XonSNNCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XonSNNDashboard/Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

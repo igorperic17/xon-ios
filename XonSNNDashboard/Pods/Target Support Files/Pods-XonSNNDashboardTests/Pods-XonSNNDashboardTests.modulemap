@@ -1,0 +1,6 @@
+framework module Pods_XonSNNDashboardTests {
+  umbrella header "Pods-XonSNNDashboardTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78403CF1241BA0E500604216 /* XonSNNCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78403CE7241BA0E500604216 /* XonSNNCore.framework */; };
+		78403CF6241BA0E500604216 /* XonSNNCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78403CF5241BA0E500604216 /* XonSNNCoreTests.swift */; };
+		78403CF8241BA0E500604216 /* XonSNNCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 78403CEA241BA0E500604216 /* XonSNNCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		784AC79D241BA91F00FC873E /* SimulationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC79C241BA91F00FC873E /* SimulationEngine.swift */; };
+		784AC7A1241BAABF00FC873E /* LIFNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC7A0241BAABF00FC873E /* LIFNeuron.swift */; };
+		784AC7A8241BAF5F00FC873E /* MultiplicativeAxon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC7A7241BAF5F00FC873E /* MultiplicativeAxon.swift */; };
+		861C3AD02421EBBD003F1274 /* LIFNeuronMetal.metal in Sources */ = {isa = PBXBuildFile; fileRef = 861C3ACF2421EBBD003F1274 /* LIFNeuronMetal.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78403CF2241BA0E500604216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78403CDE241BA0E500604216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78403CE6241BA0E500604216;
+			remoteInfo = XonSNNCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78403CE7241BA0E500604216 /* XonSNNCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XonSNNCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78403CEA241BA0E500604216 /* XonSNNCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XonSNNCore.h; sourceTree = "<group>"; };
+		78403CEB241BA0E500604216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78403CF0241BA0E500604216 /* XonSNNCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XonSNNCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78403CF5241BA0E500604216 /* XonSNNCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XonSNNCoreTests.swift; sourceTree = "<group>"; };
+		78403CF7241BA0E500604216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784AC79C241BA91F00FC873E /* SimulationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationEngine.swift; sourceTree = "<group>"; };
+		784AC7A0241BAABF00FC873E /* LIFNeuron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFNeuron.swift; sourceTree = "<group>"; };
+		784AC7A7241BAF5F00FC873E /* MultiplicativeAxon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicativeAxon.swift; sourceTree = "<group>"; };
+		861C3ACF2421EBBD003F1274 /* LIFNeuronMetal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LIFNeuronMetal.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78403CE4241BA0E500604216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78403CED241BA0E500604216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78403CF1241BA0E500604216 /* XonSNNCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78403CDD241BA0E500604216 = {
+			isa = PBXGroup;
+			children = (
+				78403CE9241BA0E500604216 /* XonSNNCore */,
+				78403CF4241BA0E500604216 /* XonSNNCoreTests */,
+				78403CE8241BA0E500604216 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78403CE8241BA0E500604216 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78403CE7241BA0E500604216 /* XonSNNCore.framework */,
+				78403CF0241BA0E500604216 /* XonSNNCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78403CE9241BA0E500604216 /* XonSNNCore */ = {
+			isa = PBXGroup;
+			children = (
+				861C3ACE2421EB61003F1274 /* Metal */,
+				784AC79B241BA8E500FC873E /* SimulationCore */,
+				784AC79A241BA8D900FC873E /* NeuronModels */,
+				784AC7A6241BAF2C00FC873E /* AxonModels */,
+				78403CEA241BA0E500604216 /* XonSNNCore.h */,
+				78403CEB241BA0E500604216 /* Info.plist */,
+			);
+			path = XonSNNCore;
+			sourceTree = "<group>";
+		};
+		78403CF4241BA0E500604216 /* XonSNNCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				78403CF5241BA0E500604216 /* XonSNNCoreTests.swift */,
+				78403CF7241BA0E500604216 /* Info.plist */,
+			);
+			path = XonSNNCoreTests;
+			sourceTree = "<group>";
+		};
+		784AC79A241BA8D900FC873E /* NeuronModels */ = {
+			isa = PBXGroup;
+			children = (
+				784AC7A0241BAABF00FC873E /* LIFNeuron.swift */,
+			);
+			path = NeuronModels;
+			sourceTree = "<group>";
+		};
+		784AC79B241BA8E500FC873E /* SimulationCore */ = {
+			isa = PBXGroup;
+			children = (
+				784AC79C241BA91F00FC873E /* SimulationEngine.swift */,
+			);
+			path = SimulationCore;
+			sourceTree = "<group>";
+		};
+		784AC7A6241BAF2C00FC873E /* AxonModels */ = {
+			isa = PBXGroup;
+			children = (
+				784AC7A7241BAF5F00FC873E /* MultiplicativeAxon.swift */,
+			);
+			path = AxonModels;
+			sourceTree = "<group>";
+		};
+		861C3ACE2421EB61003F1274 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				861C3ACF2421EBBD003F1274 /* LIFNeuronMetal.metal */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		78403CE2241BA0E500604216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78403CF8241BA0E500604216 /* XonSNNCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		78403CE6241BA0E500604216 /* XonSNNCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78403CFB241BA0E500604216 /* Build configuration list for PBXNativeTarget "XonSNNCore" */;
+			buildPhases = (
+				78403CE2241BA0E500604216 /* Headers */,
+				78403CE3241BA0E500604216 /* Sources */,
+				78403CE4241BA0E500604216 /* Frameworks */,
+				78403CE5241BA0E500604216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XonSNNCore;
+			productName = XonSNNCore;
+			productReference = 78403CE7241BA0E500604216 /* XonSNNCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78403CEF241BA0E500604216 /* XonSNNCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78403CFE241BA0E500604216 /* Build configuration list for PBXNativeTarget "XonSNNCoreTests" */;
+			buildPhases = (
+				78403CEC241BA0E500604216 /* Sources */,
+				78403CED241BA0E500604216 /* Frameworks */,
+				78403CEE241BA0E500604216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78403CF3241BA0E500604216 /* PBXTargetDependency */,
+			);
+			name = XonSNNCoreTests;
+			productName = XonSNNCoreTests;
+			productReference = 78403CF0241BA0E500604216 /* XonSNNCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78403CDE241BA0E500604216 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Xon.ai;
+				TargetAttributes = {
+					78403CE6241BA0E500604216 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					78403CEF241BA0E500604216 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 78403CE1241BA0E500604216 /* Build configuration list for PBXProject "XonSNNCore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78403CDD241BA0E500604216;
+			productRefGroup = 78403CE8241BA0E500604216 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78403CE6241BA0E500604216 /* XonSNNCore */,
+				78403CEF241BA0E500604216 /* XonSNNCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78403CE5241BA0E500604216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78403CEE241BA0E500604216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78403CE3241BA0E500604216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784AC79D241BA91F00FC873E /* SimulationEngine.swift in Sources */,
+				784AC7A8241BAF5F00FC873E /* MultiplicativeAxon.swift in Sources */,
+				861C3AD02421EBBD003F1274 /* LIFNeuronMetal.metal in Sources */,
+				784AC7A1241BAABF00FC873E /* LIFNeuron.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78403CEC241BA0E500604216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78403CF6241BA0E500604216 /* XonSNNCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78403CF3241BA0E500604216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78403CE6241BA0E500604216 /* XonSNNCore */;
+			targetProxy = 78403CF2241BA0E500604216 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		78403CF9241BA0E500604216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		78403CFA241BA0E500604216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78403CFC241BA0E500604216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GPCTY536X6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = XonSNNCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xon.ai.XonSNNCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78403CFD241BA0E500604216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GPCTY536X6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = XonSNNCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xon.ai.XonSNNCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78403CFF241BA0E500604216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPCTY536X6;
+				INFOPLIST_FILE = XonSNNCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xon.ai.XonSNNCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78403D00241BA0E500604216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPCTY536X6;
+				INFOPLIST_FILE = XonSNNCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xon.ai.XonSNNCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78403CE1241BA0E500604216 /* Build configuration list for PBXProject "XonSNNCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78403CF9241BA0E500604216 /* Debug */,
+				78403CFA241BA0E500604216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78403CFB241BA0E500604216 /* Build configuration list for PBXNativeTarget "XonSNNCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78403CFC241BA0E500604216 /* Debug */,
+				78403CFD241BA0E500604216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78403CFE241BA0E500604216 /* Build configuration list for PBXNativeTarget "XonSNNCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78403CFF241BA0E500604216 /* Debug */,
+				78403D00241BA0E500604216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78403CDE241BA0E500604216 /* Project object */;
+}
