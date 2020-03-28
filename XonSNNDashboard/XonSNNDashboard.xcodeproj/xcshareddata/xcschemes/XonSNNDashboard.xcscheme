@@ -28,6 +28,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B767C349E0DD395781F183EE4CE74B09"
+               BuildableName = "Pods_XonSNNDashboard.framework"
+               BlueprintName = "Pods-XonSNNDashboard"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "78403D09241BA17B00604216"
                BuildableName = "XonSNNDashboard.app"
                BlueprintName = "XonSNNDashboard"

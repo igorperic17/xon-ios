@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C7509CA4BE743D893F79AA4 /* Pods_XonSNNDashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796AD7DA9624E2C9A3ACD9F1 /* Pods_XonSNNDashboard.framework */; };
 		5BFF735264383E9D64EFCFFA /* Pods_XonSNNDashboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91423502EDC48AE6064060B1 /* Pods_XonSNNDashboardTests.framework */; };
 		78403D0E241BA17B00604216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78403D0D241BA17B00604216 /* AppDelegate.swift */; };
 		78403D10241BA17B00604216 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78403D0F241BA17B00604216 /* SceneDelegate.swift */; };
@@ -22,6 +21,8 @@
 		784AC7A3241BAB2C00FC873E /* XonSNNCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784AC7A2241BAB2C00FC873E /* XonSNNCore.framework */; };
 		784AC7A4241BAB2C00FC873E /* XonSNNCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 784AC7A2241BAB2C00FC873E /* XonSNNCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		784AC7AA241BC41500FC873E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 784AC7A9241BC41500FC873E /* Podfile */; };
+		8647D084242FA1A8008FE46A /* Pods_XonSNNDashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796AD7DA9624E2C9A3ACD9F1 /* Pods_XonSNNDashboard.framework */; };
+		8647D085242FA1A8008FE46A /* Pods_XonSNNDashboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 796AD7DA9624E2C9A3ACD9F1 /* Pods_XonSNNDashboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED008672ADC1A4565BA7593C /* Pods_XonSNNDashboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DEB12ECAAC89C0995715DF /* Pods_XonSNNDashboardUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				784AC7A4241BAB2C00FC873E /* XonSNNCore.framework in Embed Frameworks */,
+				8647D085242FA1A8008FE46A /* Pods_XonSNNDashboard.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +81,7 @@
 		784AC7A9241BC41500FC873E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		796AD7DA9624E2C9A3ACD9F1 /* Pods_XonSNNDashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XonSNNDashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DEB12ECAAC89C0995715DF /* Pods_XonSNNDashboardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XonSNNDashboardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8647D086242FAEDE008FE46A /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91423502EDC48AE6064060B1 /* Pods_XonSNNDashboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XonSNNDashboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3984ADC3E16334E13A21E11 /* Pods-XonSNNDashboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XonSNNDashboardTests.release.xcconfig"; path = "Target Support Files/Pods-XonSNNDashboardTests/Pods-XonSNNDashboardTests.release.xcconfig"; sourceTree = "<group>"; };
 		B7BD6937D1C5BE6025B63BFB /* Pods-XonSNNDashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XonSNNDashboard.release.xcconfig"; path = "Target Support Files/Pods-XonSNNDashboard/Pods-XonSNNDashboard.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,8 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C7509CA4BE743D893F79AA4 /* Pods_XonSNNDashboard.framework in Frameworks */,
 				784AC7A3241BAB2C00FC873E /* XonSNNCore.framework in Frameworks */,
+				8647D084242FA1A8008FE46A /* Pods_XonSNNDashboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +121,7 @@
 		7199117A8EA7DBA53FF621E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8647D086242FAEDE008FE46A /* Charts.framework */,
 				784AC7A2241BAB2C00FC873E /* XonSNNCore.framework */,
 				796AD7DA9624E2C9A3ACD9F1 /* Pods_XonSNNDashboard.framework */,
 				91423502EDC48AE6064060B1 /* Pods_XonSNNDashboardTests.framework */,

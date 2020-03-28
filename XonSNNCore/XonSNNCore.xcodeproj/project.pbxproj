@@ -13,7 +13,6 @@
 		784AC79D241BA91F00FC873E /* SimulationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC79C241BA91F00FC873E /* SimulationEngine.swift */; };
 		784AC7A1241BAABF00FC873E /* LIFNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC7A0241BAABF00FC873E /* LIFNeuron.swift */; };
 		784AC7A8241BAF5F00FC873E /* MultiplicativeAxon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC7A7241BAF5F00FC873E /* MultiplicativeAxon.swift */; };
-		861C3AD02421EBBD003F1274 /* LIFNeuronMetal.metal in Sources */ = {isa = PBXBuildFile; fileRef = 861C3ACF2421EBBD003F1274 /* LIFNeuronMetal.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,7 +241,6 @@
 			files = (
 				784AC79D241BA91F00FC873E /* SimulationEngine.swift in Sources */,
 				784AC7A8241BAF5F00FC873E /* MultiplicativeAxon.swift in Sources */,
-				861C3AD02421EBBD003F1274 /* LIFNeuronMetal.metal in Sources */,
 				784AC7A1241BAABF00FC873E /* LIFNeuron.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
