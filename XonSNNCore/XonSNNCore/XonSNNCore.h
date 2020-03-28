@@ -17,3 +17,5 @@ FOUNDATION_EXPORT const unsigned char XonSNNCoreVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <XonSNNCore/PublicHeader.h>
 
 
+#import "AAPLRenderer.h"
+#import "AAPLImage.h"
