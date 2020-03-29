@@ -22,7 +22,8 @@ Implementation of our cross-platform view controller
 
     NSAssert(_view.device, @"Metal is not supported on this device");
 
-    _renderer = [[AAPLRenderer alloc] initWithMetalKitView:_view];
+//    _renderer = [[AAPLRenderer alloc] initWithMetalKitView:_view];
+    _renderer = [[XonPipeline alloc] initWithMetalKitView:_view];
 
     NSAssert(_renderer, @"Renderer failed initialization");
 

@@ -19,3 +19,4 @@ FOUNDATION_EXPORT const unsigned char XonSNNCoreVersionString[];
 
 #import "AAPLRenderer.h"
 #import "AAPLImage.h"
+#import "AAPLShaderTypes.h"

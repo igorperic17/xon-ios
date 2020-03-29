@@ -22,6 +22,8 @@
 		8647D0BF242FBB84008FE46A /* Image.tga in Resources */ = {isa = PBXBuildFile; fileRef = 8647D0B6242FBB84008FE46A /* Image.tga */; };
 		8647D0C0242FBB84008FE46A /* AAPLImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8647D0B7242FBB84008FE46A /* AAPLImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8647D0C1242FBB84008FE46A /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0B8242FBB84008FE46A /* AAPLShaders.metal */; };
+		8647D0C4242FC929008FE46A /* XonPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0C3242FC929008FE46A /* XonPipeline.swift */; };
+		8647D0C6242FE33E008FE46A /* XonShaderTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0C5242FE33E008FE46A /* XonShaderTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		8647D0B6242FBB84008FE46A /* Image.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Image.tga; sourceTree = "<group>"; };
 		8647D0B7242FBB84008FE46A /* AAPLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLImage.h; sourceTree = "<group>"; };
 		8647D0B8242FBB84008FE46A /* AAPLShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = AAPLShaders.metal; sourceTree = "<group>"; };
+		8647D0C3242FC929008FE46A /* XonPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XonPipeline.swift; sourceTree = "<group>"; };
+		8647D0C5242FE33E008FE46A /* XonShaderTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XonShaderTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				784AC79C241BA91F00FC873E /* SimulationEngine.swift */,
+				8647D0C3242FC929008FE46A /* XonPipeline.swift */,
+				8647D0C5242FE33E008FE46A /* XonShaderTypes.swift */,
 			);
 			path = SimulationCore;
 			sourceTree = "<group>";
@@ -280,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8647D0C6242FE33E008FE46A /* XonShaderTypes.swift in Sources */,
+				8647D0C4242FC929008FE46A /* XonPipeline.swift in Sources */,
 				8647D0C1242FBB84008FE46A /* AAPLShaders.metal in Sources */,
 				784AC79D241BA91F00FC873E /* SimulationEngine.swift in Sources */,
 				784AC7A8241BAF5F00FC873E /* MultiplicativeAxon.swift in Sources */,
