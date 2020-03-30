@@ -5,26 +5,26 @@ Abstract:
 Header containing types and enum constants shared between Metal shaders and C/ObjC source
 */
 
-#ifndef AAPLShaderTypes_h
-#define AAPLShaderTypes_h
+#ifndef XonShaderTypes_h
+#define XonShaderTypes_h
 
 #include <simd/simd.h>
 
 // Buffer index values shared between shader and C code to ensure Metal shader buffer inputs match
 //   Metal API buffer set calls
-typedef enum AAPLVertexInputIndex
+typedef enum XonVertexInputIndex
 {
-    AAPLVertexInputIndexVertices     = 0,
-    AAPLVertexInputIndexViewportSize = 1,
-} AAPLVertexInputIndex;
+    XonVertexInputIndexVertices     = 0,
+    XonVertexInputIndexViewportSize = 1,
+} XonVertexInputIndex;
 
 // Texture index values shared between shader and C code to ensure Metal shader buffer inputs match
 //   Metal API texture set calls
-typedef enum AAPLTextureIndex
+typedef enum XonTextureIndex
 {
-    AAPLTextureIndexInput  = 0,
-    AAPLTextureIndexOutput = 1,
-} AAPLTextureIndex;
+    XonTextureIndexInput  = 0,
+    XonTextureIndexOutput = 1,
+} XonTextureIndex;
 
 //  This structure defines the layout of each vertex in the array of vertices set as an input to our
 //    Metal vertex shader.  Since this header is shared between the .metal shader and C code,
@@ -36,6 +36,6 @@ typedef struct
 
     // 2D texture coordinate
     vector_float2 textureCoordinate;
-} AAPLVertex;
+} XonVertex;
 
-#endif /* AAPLShaderTypes_h */
+#endif /* XonShaderTypes_h */

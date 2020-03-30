@@ -8,6 +8,7 @@
 
 import Foundation
 import Metal
+import MetalKit
 
 @objcMembers
 public class XonPipeline: NSObject {
@@ -137,8 +138,8 @@ extension XonPipeline: MTKViewDelegate {
         let computeEncoder = commandBuffer.makeComputeCommandEncoder()!
         
         computeEncoder.setComputePipelineState(computePipelineState!)
-        computeEncoder.setTexture(outputTexture, index: XonTextureIndex.input.rawValue)
-        computeEncoder.setTexture(outputTexture, index: XonTextureIndex.output.rawValue)
+        computeEncoder.setTexture(outputTexture, index: Int(XonTextureIndexInput.rawValue))
+        computeEncoder.setTexture(outputTexture, index: Int(XonTextureIndexOutput.rawValue))
         computeEncoder.dispatchThreadgroups(threadgroupCount, threadsPerThreadgroup: threadgroupSize)
         computeEncoder.endEncoding()
 
@@ -153,12 +154,12 @@ extension XonPipeline: MTKViewDelegate {
             
             //  Encode the vertex data.
             quadVertices.withUnsafeBytes() {
-                renderEncoder.setVertexBytes($0.baseAddress!, length: quadVertices.count * MemoryLayout<Float>.stride, index: XonVertexInputIndex.vertices.rawValue)
+                renderEncoder.setVertexBytes($0.baseAddress!, length: quadVertices.count * MemoryLayout<Float>.stride, index: Int(XonVertexInputIndexVertices.rawValue))
             }
-            renderEncoder.setVertexBytes(&viewportSize, length: MemoryLayout.size(ofValue: viewportSize), index: XonVertexInputIndex.viewPortSize.rawValue)
+            renderEncoder.setVertexBytes(&viewportSize, length: MemoryLayout.size(ofValue: viewportSize), index: Int(XonVertexInputIndexViewportSize.rawValue))
             
             // Encode the output texture from the previous stage.
-            renderEncoder.setFragmentTexture(outputTexture, index: XonTextureIndex.output.rawValue)
+            renderEncoder.setFragmentTexture(outputTexture, index: Int(XonTextureIndexOutput.rawValue))
 
             // Draw the quad.
             renderEncoder.drawPrimitives(type: MTLPrimitiveType.triangle, vertexStart: 0, vertexCount: 6)

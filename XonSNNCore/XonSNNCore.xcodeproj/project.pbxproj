@@ -13,17 +13,14 @@
 		784AC79D241BA91F00FC873E /* SimulationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC79C241BA91F00FC873E /* SimulationEngine.swift */; };
 		784AC7A1241BAABF00FC873E /* LIFNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC7A0241BAABF00FC873E /* LIFNeuron.swift */; };
 		784AC7A8241BAF5F00FC873E /* MultiplicativeAxon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC7A7241BAF5F00FC873E /* MultiplicativeAxon.swift */; };
-		8647D0B9242FBB84008FE46A /* AAPLShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8647D0B0242FBB83008FE46A /* AAPLShaderTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8647D0BA242FBB84008FE46A /* initial-neuron-noise-2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 8647D0B1242FBB83008FE46A /* initial-neuron-noise-2.tga */; };
-		8647D0BB242FBB84008FE46A /* AAPLRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8647D0B2242FBB83008FE46A /* AAPLRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8647D0BC242FBB84008FE46A /* AAPLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0B3242FBB83008FE46A /* AAPLImage.m */; };
-		8647D0BD242FBB84008FE46A /* AAPLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0B4242FBB84008FE46A /* AAPLRenderer.m */; };
 		8647D0BE242FBB84008FE46A /* initial-neuron-noise.tga in Resources */ = {isa = PBXBuildFile; fileRef = 8647D0B5242FBB84008FE46A /* initial-neuron-noise.tga */; };
 		8647D0BF242FBB84008FE46A /* Image.tga in Resources */ = {isa = PBXBuildFile; fileRef = 8647D0B6242FBB84008FE46A /* Image.tga */; };
 		8647D0C0242FBB84008FE46A /* AAPLImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8647D0B7242FBB84008FE46A /* AAPLImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8647D0C1242FBB84008FE46A /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0B8242FBB84008FE46A /* AAPLShaders.metal */; };
 		8647D0C4242FC929008FE46A /* XonPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0C3242FC929008FE46A /* XonPipeline.swift */; };
-		8647D0C6242FE33E008FE46A /* XonShaderTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0C5242FE33E008FE46A /* XonShaderTypes.swift */; };
+		86DDD510243193B200310F21 /* XonShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 86DDD50F243193B200310F21 /* XonShaderTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,17 +44,14 @@
 		784AC7A0241BAABF00FC873E /* LIFNeuron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFNeuron.swift; sourceTree = "<group>"; };
 		784AC7A7241BAF5F00FC873E /* MultiplicativeAxon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicativeAxon.swift; sourceTree = "<group>"; };
 		861C3ACF2421EBBD003F1274 /* LIFNeuronMetal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LIFNeuronMetal.metal; sourceTree = "<group>"; };
-		8647D0B0242FBB83008FE46A /* AAPLShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLShaderTypes.h; sourceTree = "<group>"; };
 		8647D0B1242FBB83008FE46A /* initial-neuron-noise-2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "initial-neuron-noise-2.tga"; sourceTree = "<group>"; };
-		8647D0B2242FBB83008FE46A /* AAPLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLRenderer.h; sourceTree = "<group>"; };
 		8647D0B3242FBB83008FE46A /* AAPLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLImage.m; sourceTree = "<group>"; };
-		8647D0B4242FBB84008FE46A /* AAPLRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLRenderer.m; sourceTree = "<group>"; };
 		8647D0B5242FBB84008FE46A /* initial-neuron-noise.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "initial-neuron-noise.tga"; sourceTree = "<group>"; };
 		8647D0B6242FBB84008FE46A /* Image.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Image.tga; sourceTree = "<group>"; };
 		8647D0B7242FBB84008FE46A /* AAPLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLImage.h; sourceTree = "<group>"; };
 		8647D0B8242FBB84008FE46A /* AAPLShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = AAPLShaders.metal; sourceTree = "<group>"; };
 		8647D0C3242FC929008FE46A /* XonPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XonPipeline.swift; sourceTree = "<group>"; };
-		8647D0C5242FE33E008FE46A /* XonShaderTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XonShaderTypes.swift; sourceTree = "<group>"; };
+		86DDD50F243193B200310F21 /* XonShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XonShaderTypes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +125,9 @@
 		784AC79B241BA8E500FC873E /* SimulationCore */ = {
 			isa = PBXGroup;
 			children = (
+				86DDD50F243193B200310F21 /* XonShaderTypes.h */,
 				784AC79C241BA91F00FC873E /* SimulationEngine.swift */,
 				8647D0C3242FC929008FE46A /* XonPipeline.swift */,
-				8647D0C5242FE33E008FE46A /* XonShaderTypes.swift */,
 			);
 			path = SimulationCore;
 			sourceTree = "<group>";
@@ -157,10 +151,7 @@
 		8647D0AF242FBB83008FE46A /* Renderer */ = {
 			isa = PBXGroup;
 			children = (
-				8647D0B0242FBB83008FE46A /* AAPLShaderTypes.h */,
 				8647D0B1242FBB83008FE46A /* initial-neuron-noise-2.tga */,
-				8647D0B2242FBB83008FE46A /* AAPLRenderer.h */,
-				8647D0B4242FBB84008FE46A /* AAPLRenderer.m */,
 				8647D0B3242FBB83008FE46A /* AAPLImage.m */,
 				8647D0B5242FBB84008FE46A /* initial-neuron-noise.tga */,
 				8647D0B6242FBB84008FE46A /* Image.tga */,
@@ -177,10 +168,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DDD510243193B200310F21 /* XonShaderTypes.h in Headers */,
 				78403CF8241BA0E500604216 /* XonSNNCore.h in Headers */,
-				8647D0B9242FBB84008FE46A /* AAPLShaderTypes.h in Headers */,
 				8647D0C0242FBB84008FE46A /* AAPLImage.h in Headers */,
-				8647D0BB242FBB84008FE46A /* AAPLRenderer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,14 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8647D0C6242FE33E008FE46A /* XonShaderTypes.swift in Sources */,
 				8647D0C4242FC929008FE46A /* XonPipeline.swift in Sources */,
 				8647D0C1242FBB84008FE46A /* AAPLShaders.metal in Sources */,
 				784AC79D241BA91F00FC873E /* SimulationEngine.swift in Sources */,
 				784AC7A8241BAF5F00FC873E /* MultiplicativeAxon.swift in Sources */,
 				784AC7A1241BAABF00FC873E /* LIFNeuron.swift in Sources */,
 				8647D0BC242FBB84008FE46A /* AAPLImage.m in Sources */,
-				8647D0BD242FBB84008FE46A /* AAPLRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +434,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				INFOPLIST_FILE = XonSNNCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,6 +442,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MTL_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xon.ai.XonSNNCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -472,6 +462,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				INFOPLIST_FILE = XonSNNCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,6 +470,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MTL_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xon.ai.XonSNNCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

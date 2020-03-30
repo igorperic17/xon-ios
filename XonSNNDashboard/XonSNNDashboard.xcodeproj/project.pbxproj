@@ -11,7 +11,6 @@
 		78403D0E241BA17B00604216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78403D0D241BA17B00604216 /* AppDelegate.swift */; };
 		78403D10241BA17B00604216 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78403D0F241BA17B00604216 /* SceneDelegate.swift */; };
 		78403D12241BA17B00604216 /* LIFNeuronSimulationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78403D11241BA17B00604216 /* LIFNeuronSimulationVC.swift */; };
-		78403D14241BA17B00604216 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78403D13241BA17B00604216 /* SecondViewController.swift */; };
 		78403D17241BA17B00604216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78403D15241BA17B00604216 /* Main.storyboard */; };
 		78403D1A241BA17B00604216 /* XonSNNDashboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78403D18241BA17B00604216 /* XonSNNDashboard.xcdatamodeld */; };
 		78403D1C241BA17E00604216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78403D1B241BA17E00604216 /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		784AC7AA241BC41500FC873E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 784AC7A9241BC41500FC873E /* Podfile */; };
 		8647D084242FA1A8008FE46A /* Pods_XonSNNDashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796AD7DA9624E2C9A3ACD9F1 /* Pods_XonSNNDashboard.framework */; };
 		8647D085242FA1A8008FE46A /* Pods_XonSNNDashboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 796AD7DA9624E2C9A3ACD9F1 /* Pods_XonSNNDashboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8647D0AE242FBB70008FE46A /* AAPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0A4242FBB70008FE46A /* AAPLViewController.m */; };
 		8647D0C8242FED4E008FE46A /* PopulationEncodingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0C7242FED4E008FE46A /* PopulationEncodingVC.swift */; };
 		ED008672ADC1A4565BA7593C /* Pods_XonSNNDashboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DEB12ECAAC89C0995715DF /* Pods_XonSNNDashboardUITests.framework */; };
 /* End PBXBuildFile section */
@@ -67,7 +65,6 @@
 		78403D0D241BA17B00604216 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78403D0F241BA17B00604216 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		78403D11241BA17B00604216 /* LIFNeuronSimulationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFNeuronSimulationVC.swift; sourceTree = "<group>"; };
-		78403D13241BA17B00604216 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		78403D16241BA17B00604216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78403D19241BA17B00604216 /* XonSNNDashboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XonSNNDashboard.xcdatamodel; sourceTree = "<group>"; };
 		78403D1B241BA17E00604216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,9 +81,9 @@
 		796AD7DA9624E2C9A3ACD9F1 /* Pods_XonSNNDashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XonSNNDashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DEB12ECAAC89C0995715DF /* Pods_XonSNNDashboardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XonSNNDashboardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8647D086242FAEDE008FE46A /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8647D097242FBB70008FE46A /* AAPLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLViewController.h; sourceTree = "<group>"; };
-		8647D0A4242FBB70008FE46A /* AAPLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLViewController.m; sourceTree = "<group>"; };
 		8647D0C7242FED4E008FE46A /* PopulationEncodingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationEncodingVC.swift; sourceTree = "<group>"; };
+		86DDD50724318DED00310F21 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		86DDD50824318DED00310F21 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		91423502EDC48AE6064060B1 /* Pods_XonSNNDashboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XonSNNDashboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3984ADC3E16334E13A21E11 /* Pods-XonSNNDashboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XonSNNDashboardTests.release.xcconfig"; path = "Target Support Files/Pods-XonSNNDashboardTests/Pods-XonSNNDashboardTests.release.xcconfig"; sourceTree = "<group>"; };
 		B7BD6937D1C5BE6025B63BFB /* Pods-XonSNNDashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XonSNNDashboard.release.xcconfig"; path = "Target Support Files/Pods-XonSNNDashboard/Pods-XonSNNDashboard.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +123,8 @@
 		7199117A8EA7DBA53FF621E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86DDD50824318DED00310F21 /* Metal.framework */,
+				86DDD50724318DED00310F21 /* MetalKit.framework */,
 				8647D086242FAEDE008FE46A /* Charts.framework */,
 				784AC7A2241BAB2C00FC873E /* XonSNNCore.framework */,
 				796AD7DA9624E2C9A3ACD9F1 /* Pods_XonSNNDashboard.framework */,
@@ -208,9 +207,6 @@
 		8647D091242FBB70008FE46A /* PopulationEncoding */ = {
 			isa = PBXGroup;
 			children = (
-				78403D13241BA17B00604216 /* SecondViewController.swift */,
-				8647D097242FBB70008FE46A /* AAPLViewController.h */,
-				8647D0A4242FBB70008FE46A /* AAPLViewController.m */,
 				8647D0C7242FED4E008FE46A /* PopulationEncodingVC.swift */,
 			);
 			path = PopulationEncoding;
@@ -439,11 +435,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78403D14241BA17B00604216 /* SecondViewController.swift in Sources */,
 				78403D12241BA17B00604216 /* LIFNeuronSimulationVC.swift in Sources */,
 				78403D1A241BA17B00604216 /* XonSNNDashboard.xcdatamodeld in Sources */,
 				78403D0E241BA17B00604216 /* AppDelegate.swift in Sources */,
-				8647D0AE242FBB70008FE46A /* AAPLViewController.m in Sources */,
 				8647D0C8242FED4E008FE46A /* PopulationEncodingVC.swift in Sources */,
 				78403D10241BA17B00604216 /* SceneDelegate.swift in Sources */,
 			);
