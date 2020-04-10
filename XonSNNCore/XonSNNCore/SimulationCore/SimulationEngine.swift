@@ -19,13 +19,6 @@ public protocol NeuronModelDelegate {
     func neuronSpiked(_ neuron: NeuronModelProtocol, atTimestamp timestamp: Double)
 }
 
-public enum SimulationState {
-    case stopped
-    case paused
-    case running
-    case preparingForRun
-}
-
 public class SimulationEngine {
     
     // Step size. Default value of 1 ms

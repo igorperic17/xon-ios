@@ -13,20 +13,25 @@ import MetalKit
 
 class PopulationEncodingVC: UIViewController {
     
-    var renderer: XonPipeline?
+    var computePipeline: XonPipeline!
     
     @IBOutlet weak var mtkView: MTKView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mtkView.device = MTLCreateSystemDefaultDevice()
+        computePipeline = XonPipeline.init()
         
-        renderer = XonPipeline.init(withMetalKitView: mtkView)
+        // create compute graph
+        let myLayer = XonLayer.init(withNeuronModel: "grayscaleKernel", onComputePipeline: computePipeline)
+        computePipeline.addLayer(myLayer)
         
-        renderer?.mtkView(mtkView, drawableSizeWillChange: mtkView.drawableSize)
+        // define visualization
+        myLayer.setRenderTarget(mtkView)
         
-        mtkView.delegate = renderer
+        computePipeline.run()
+        
+//        computePipeline.stop()
     }
     
 }

@@ -12,7 +12,6 @@
 		78403CF8241BA0E500604216 /* XonSNNCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 78403CEA241BA0E500604216 /* XonSNNCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		784AC79D241BA91F00FC873E /* SimulationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC79C241BA91F00FC873E /* SimulationEngine.swift */; };
 		784AC7A1241BAABF00FC873E /* LIFNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC7A0241BAABF00FC873E /* LIFNeuron.swift */; };
-		784AC7A8241BAF5F00FC873E /* MultiplicativeAxon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784AC7A7241BAF5F00FC873E /* MultiplicativeAxon.swift */; };
 		8647D0BA242FBB84008FE46A /* initial-neuron-noise-2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 8647D0B1242FBB83008FE46A /* initial-neuron-noise-2.tga */; };
 		8647D0BC242FBB84008FE46A /* AAPLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0B3242FBB83008FE46A /* AAPLImage.m */; };
 		8647D0BE242FBB84008FE46A /* initial-neuron-noise.tga in Resources */ = {isa = PBXBuildFile; fileRef = 8647D0B5242FBB84008FE46A /* initial-neuron-noise.tga */; };
@@ -21,6 +20,8 @@
 		8647D0C1242FBB84008FE46A /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0B8242FBB84008FE46A /* AAPLShaders.metal */; };
 		8647D0C4242FC929008FE46A /* XonPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8647D0C3242FC929008FE46A /* XonPipeline.swift */; };
 		86DDD510243193B200310F21 /* XonShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 86DDD50F243193B200310F21 /* XonShaderTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86DDD5122431985A00310F21 /* XonLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DDD5112431985A00310F21 /* XonLayer.swift */; };
+		86DDD5152431B14900310F21 /* XonMTKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DDD5142431B14900310F21 /* XonMTKView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 		78403CF7241BA0E500604216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		784AC79C241BA91F00FC873E /* SimulationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationEngine.swift; sourceTree = "<group>"; };
 		784AC7A0241BAABF00FC873E /* LIFNeuron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFNeuron.swift; sourceTree = "<group>"; };
-		784AC7A7241BAF5F00FC873E /* MultiplicativeAxon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicativeAxon.swift; sourceTree = "<group>"; };
 		861C3ACF2421EBBD003F1274 /* LIFNeuronMetal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LIFNeuronMetal.metal; sourceTree = "<group>"; };
 		8647D0B1242FBB83008FE46A /* initial-neuron-noise-2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "initial-neuron-noise-2.tga"; sourceTree = "<group>"; };
 		8647D0B3242FBB83008FE46A /* AAPLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLImage.m; sourceTree = "<group>"; };
@@ -52,6 +52,8 @@
 		8647D0B8242FBB84008FE46A /* AAPLShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = AAPLShaders.metal; sourceTree = "<group>"; };
 		8647D0C3242FC929008FE46A /* XonPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XonPipeline.swift; sourceTree = "<group>"; };
 		86DDD50F243193B200310F21 /* XonShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XonShaderTypes.h; sourceTree = "<group>"; };
+		86DDD5112431985A00310F21 /* XonLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XonLayer.swift; sourceTree = "<group>"; };
+		86DDD5142431B14900310F21 /* XonMTKView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XonMTKView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +96,11 @@
 		78403CE9241BA0E500604216 /* XonSNNCore */ = {
 			isa = PBXGroup;
 			children = (
+				86DDD5132431B12500310F21 /* UI */,
 				8647D0AF242FBB83008FE46A /* Renderer */,
 				861C3ACE2421EB61003F1274 /* Metal */,
 				784AC79B241BA8E500FC873E /* SimulationCore */,
 				784AC79A241BA8D900FC873E /* NeuronModels */,
-				784AC7A6241BAF2C00FC873E /* AxonModels */,
 				78403CEA241BA0E500604216 /* XonSNNCore.h */,
 				78403CEB241BA0E500604216 /* Info.plist */,
 			);
@@ -128,16 +130,9 @@
 				86DDD50F243193B200310F21 /* XonShaderTypes.h */,
 				784AC79C241BA91F00FC873E /* SimulationEngine.swift */,
 				8647D0C3242FC929008FE46A /* XonPipeline.swift */,
+				86DDD5112431985A00310F21 /* XonLayer.swift */,
 			);
 			path = SimulationCore;
-			sourceTree = "<group>";
-		};
-		784AC7A6241BAF2C00FC873E /* AxonModels */ = {
-			isa = PBXGroup;
-			children = (
-				784AC7A7241BAF5F00FC873E /* MultiplicativeAxon.swift */,
-			);
-			path = AxonModels;
 			sourceTree = "<group>";
 		};
 		861C3ACE2421EB61003F1274 /* Metal */ = {
@@ -159,6 +154,14 @@
 				8647D0B8242FBB84008FE46A /* AAPLShaders.metal */,
 			);
 			path = Renderer;
+			sourceTree = "<group>";
+		};
+		86DDD5132431B12500310F21 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				86DDD5142431B14900310F21 /* XonMTKView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,9 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8647D0C4242FC929008FE46A /* XonPipeline.swift in Sources */,
+				86DDD5152431B14900310F21 /* XonMTKView.swift in Sources */,
 				8647D0C1242FBB84008FE46A /* AAPLShaders.metal in Sources */,
 				784AC79D241BA91F00FC873E /* SimulationEngine.swift in Sources */,
-				784AC7A8241BAF5F00FC873E /* MultiplicativeAxon.swift in Sources */,
+				86DDD5122431985A00310F21 /* XonLayer.swift in Sources */,
 				784AC7A1241BAABF00FC873E /* LIFNeuron.swift in Sources */,
 				8647D0BC242FBB84008FE46A /* AAPLImage.m in Sources */,
 			);
