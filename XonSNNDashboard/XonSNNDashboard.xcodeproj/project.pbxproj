@@ -82,6 +82,7 @@
 		82DEB12ECAAC89C0995715DF /* Pods_XonSNNDashboardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XonSNNDashboardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8647D086242FAEDE008FE46A /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8647D0C7242FED4E008FE46A /* PopulationEncodingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationEncodingVC.swift; sourceTree = "<group>"; };
+		86C412742440CC6F00BFAC1E /* XonSNNDashboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XonSNNDashboard.entitlements; sourceTree = "<group>"; };
 		86DDD50724318DED00310F21 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		86DDD50824318DED00310F21 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		91423502EDC48AE6064060B1 /* Pods_XonSNNDashboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XonSNNDashboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +160,7 @@
 		78403D0C241BA17B00604216 /* XonSNNDashboard */ = {
 			isa = PBXGroup;
 			children = (
+				86C412742440CC6F00BFAC1E /* XonSNNDashboard.entitlements */,
 				8647D091242FBB70008FE46A /* PopulationEncoding */,
 				78403D0D241BA17B00604216 /* AppDelegate.swift */,
 				78403D0F241BA17B00604216 /* SceneDelegate.swift */,
@@ -613,6 +615,7 @@
 			baseConfigurationReference = E9C32B2202A1AAE2BF765B67 /* Pods-XonSNNDashboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XonSNNDashboard/XonSNNDashboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPCTY536X6;
 				INFOPLIST_FILE = XonSNNDashboard/Info.plist;
@@ -622,6 +625,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xon.ai.XonSNNDashboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -632,6 +636,7 @@
 			baseConfigurationReference = B7BD6937D1C5BE6025B63BFB /* Pods-XonSNNDashboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XonSNNDashboard/XonSNNDashboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPCTY536X6;
 				INFOPLIST_FILE = XonSNNDashboard/Info.plist;
@@ -641,6 +646,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xon.ai.XonSNNDashboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
